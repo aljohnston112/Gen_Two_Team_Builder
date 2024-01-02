@@ -1,7 +1,11 @@
+import json
 import math
 import os.path
 import string
+import typing
 from collections import defaultdict
+
+import cattr
 
 import config
 from algorithm.damage_calculator import get_max_damage_opponent_pokemon_can_do_to_player, \
@@ -9,7 +13,13 @@ from algorithm.damage_calculator import get_max_damage_opponent_pokemon_can_do_t
 from parser.PokemonDataSource import get_pokemon
 
 
-def print_ranks(rank_to_pokemon, file_name):
+def save_ranks_json(rank_to_pokemon, file_name):
+    with open(file_name + ".json", "w", encoding="utf-8") as fo:
+        fo.write(json.dumps(cattr.unstructure(rank_to_pokemon)))
+
+
+def save_ranks(rank_to_pokemon, file_name):
+    save_ranks_json(rank_to_pokemon, file_name)
     with open(file_name, "w", encoding="utf-8") as fo:
         for k, v in sorted(rank_to_pokemon.items()):
             fo.write(f"Rank: {k}\n")
@@ -22,9 +32,11 @@ def print_ranks(rank_to_pokemon, file_name):
             fo.write("\n")
 
 
-def print_move_ranks(
+def save_move_ranks(
         file_name,
-        best_player_moves: defaultdict):
+        best_player_moves: defaultdict
+):
+    save_ranks_json(best_player_moves, file_name)
     with open(file_name, "w", encoding="utf-8") as fo:
         for move, rank in sorted(best_player_moves.items(), key=lambda entry: entry[1]):
             fo.write(f"{str(move)}'s Rank: {rank}\n")
@@ -187,12 +199,72 @@ def __rank_pokemon__(
             rank += number_of_pokemon_defeated_by_attacker / sum_of_pokemon_defeated_by_all
             best_player_moves[move] /= number_of_pokemon_defeated_by_attacker
         attacker_rank_to_pokemon[rank].append((attacker_name, best_player_moves))
-    print_move_ranks(config.MOVE_RANKS_FILE_PREFIX + "_" + file_name.split("/")[-1], best_moves)
-    print_ranks(attacker_rank_to_pokemon, file_name)
+    save_move_ranks(config.MOVE_RANKS_FILE_PREFIX + "_" + file_name.split("/")[-1], best_moves)
+    save_ranks(attacker_rank_to_pokemon, file_name)
 
 
-def save_weighted_sum_of_ranks():
-    pass
+def save_average_of_ranks():
+    real_ranks_file = config.REAL_RANKS + ".json"
+    opponent_ranks_file = config.OPPONENT_RANKS + ".json"
+    player_ranks_file = config.PLAYER_RANKS + ".json"
+
+    with open(real_ranks_file, "r") as fo:
+        real_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
+        )
+    with open(opponent_ranks_file, "r") as fo:
+        opponent_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
+        )
+    with open(player_ranks_file, "r") as fo:
+        player_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
+        )
+
+    move_to_count = defaultdict(lambda: 0)
+    move_to_rank = defaultdict(lambda: 0)
+    for ranking in [real_ranks, opponent_ranks, player_ranks]:
+        for rank, move_ranks in ranking.items():
+            for (pokemon_name, attack_to_rank) in move_ranks:
+                move_to_count[pokemon_name] += 1
+                move_to_rank[pokemon_name] += rank
+    for move, rank in move_to_rank.items():
+        move_to_rank[move] /= move_to_count[move]
+    save_move_ranks(config.AVERAGE_RANKS_FILE, move_to_rank)
+
+    move_ranks_file_prefix = config.MOVE_RANKS_FILE_PREFIX
+    real_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
+    opponent_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
+    player_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
+
+    with open(real_move_ranks_file, "r") as fo:
+        real_move_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[str, float]
+        )
+    with open(opponent_move_ranks_file, "r") as fo:
+        opponent_move_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[str, float]
+        )
+    with open(player_move_ranks_file, "r") as fo:
+        player_move_ranks = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[str, float]
+        )
+
+    move_to_count = defaultdict(lambda: 0)
+    move_to_rank = defaultdict(lambda: 0)
+    for ranking in [real_move_ranks, opponent_move_ranks, player_move_ranks]:
+        for move_name, rank in ranking.items():
+            move_to_count[move_name] += 1
+            move_to_rank[move_name] += rank
+    for move, rank in move_to_rank.items():
+        move_to_rank[move] /= move_to_count[move]
+    save_move_ranks(config.AVERAGE_MOVES_RANKS_FILE, move_to_rank)
 
 
 def rank_pokemon():
@@ -200,7 +272,7 @@ def rank_pokemon():
     move_ranks_file_prefix = config.MOVE_RANKS_FILE_PREFIX
     player_ranks_file = config.PLAYER_RANKS
 
-    if not os.path.isfile(player_ranks_file) or not os.path.isfile(move_ranks_file_prefix):
+    if not os.path.isfile(player_ranks_file):
         __rank_pokemon__(
             player_ranks_file,
             attacker_is_min_stat=True,
@@ -210,7 +282,7 @@ def rank_pokemon():
         )
 
     opponent_ranks_file = config.OPPONENT_RANKS
-    if not os.path.isfile(opponent_ranks_file) or not os.path.isfile(move_ranks_file_prefix):
+    if not os.path.isfile(opponent_ranks_file):
         __rank_pokemon__(
             opponent_ranks_file,
             attacker_is_min_stat=False,
@@ -220,7 +292,7 @@ def rank_pokemon():
         )
 
     real_ranks_file = config.REAL_RANKS
-    if not os.path.isfile(real_ranks_file) or not os.path.isfile(move_ranks_file_prefix):
+    if not os.path.isfile(real_ranks_file):
         __rank_pokemon__(
             real_ranks_file,
             attacker_is_min_stat=False,
@@ -228,5 +300,4 @@ def rank_pokemon():
             attacker_buff=False,
             defender_buff=True
         )
-        
-    save_weighted_sum_of_ranks()
+    save_average_of_ranks()
