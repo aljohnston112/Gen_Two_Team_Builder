@@ -1,0 +1,3030 @@
+Rank: 0.00019654088050314466
+
+    Pokemon
+        a: Metapod
+
+           attacks
+               0: Harden
+               kill_count: 1.0
+
+    Pokemon
+        b: Magikarp
+
+           attacks
+               0: Splash
+               kill_count: 1.0
+
+    Pokemon
+        c: Unown
+
+           attacks
+               0: Hidden Power
+               kill_count: 1.0
+
+Rank: 0.00039308176100628933
+
+    Pokemon
+        a: Ditto
+
+           attacks
+               0: Transform
+               kill_count: 1.0
+
+    Pokemon
+        b: Ledyba
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+    Pokemon
+        c: Hoppip
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+Rank: 0.0005896226415094339
+
+    Pokemon
+        a: Weedle
+
+           attacks
+               0: Poison Sting
+               kill_count: 1.0
+
+    Pokemon
+        b: Kakuna
+
+           attacks
+               0: Poison Sting
+               kill_count: 1.0
+
+    Pokemon
+        c: Paras
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+    Pokemon
+        d: Bellsprout
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 1.0
+
+    Pokemon
+        e: Farfetch'd
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+    Pokemon
+        f: Chansey
+
+           attacks
+               0: Seismic Toss
+               kill_count: 1.0
+
+    Pokemon
+        g: Pichu
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+    Pokemon
+        h: Smeargle
+
+           attacks
+               0: Sketch
+               kill_count: 1.0
+
+    Pokemon
+        i: Blissey
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+Rank: 0.0007861635220125787
+
+    Pokemon
+        a: Eevee
+
+           attacks
+               0: Double-Edge
+               kill_count: 1.0
+
+    Pokemon
+        b: Marill
+
+           attacks
+               0: Surf
+               kill_count: 1.0
+
+Rank: 0.0011792452830188679
+
+    Pokemon
+        a: Horsea
+
+           attacks
+               0: Surf
+               kill_count: 1.0
+
+    Pokemon
+        b: Igglybuff
+
+           attacks
+               0: Dizzy Punch
+               kill_count: 0.6666666666666666
+               1: Shadow Ball
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        c: Sunkern
+
+           attacks
+               0: Giga Drain
+               kill_count: 0.6666666666666666
+               1: Sludge Bomb
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        d: Wobbuffet
+
+           attacks
+               0: Counter
+               kill_count: 0.6666666666666666
+               1: Destiny Bond
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        e: Slugma
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+    Pokemon
+        f: Tyrogue
+
+           attacks
+               0: Mach Punch
+               kill_count: 0.6666666666666666
+               1: Thief
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        g: Smoochum
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.6666666666666666
+               1: Shadow Ball
+               kill_count: 0.3333333333333333
+
+Rank: 0.0013757861635220125
+
+    Pokemon
+        a: Seel
+
+           attacks
+               0: Surf
+               kill_count: 1.0
+
+    Pokemon
+        b: Krabby
+
+           attacks
+               0: Surf
+               kill_count: 1.0
+
+Rank: 0.0015723270440251573
+
+    Pokemon
+        a: Bulbasaur
+
+           attacks
+               0: Petal Dance
+               kill_count: 0.25
+               1: Double-Edge
+               kill_count: 0.75
+
+    Pokemon
+        b: Vulpix
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+    Pokemon
+        c: Voltorb
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+    Pokemon
+        d: Cyndaquil
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+    Pokemon
+        e: Sentret
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.25
+               1: Double-Edge
+               kill_count: 0.75
+
+    Pokemon
+        f: Hoothoot
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.75
+               1: Faint Attack
+               kill_count: 0.25
+
+    Pokemon
+        g: Togepi
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: Double-Edge
+               kill_count: 0.5
+
+    Pokemon
+        h: Skiploom
+
+           attacks
+               0: Giga Drain
+               kill_count: 0.25
+               1: Double-Edge
+               kill_count: 0.75
+
+    Pokemon
+        i: Magcargo
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+Rank: 0.001768867924528302
+
+    Pokemon
+        a: Magnemite
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+    Pokemon
+        b: Bellossom
+
+           attacks
+               0: Petal Dance
+               kill_count: 1.0
+
+Rank: 0.0019654088050314465
+
+    Pokemon
+        a: Ivysaur
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.8
+               1: Petal Dance
+               kill_count: 0.2
+
+    Pokemon
+        b: Butterfree
+
+           attacks
+               0: Psychic
+               kill_count: 0.4
+               1: Double-Edge
+               kill_count: 0.6
+
+    Pokemon
+        c: Pidgey
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.4
+               1: Double-Edge
+               kill_count: 0.6
+
+    Pokemon
+        d: Diglett
+
+           attacks
+               0: Earthquake
+               kill_count: 1.0
+
+    Pokemon
+        e: Delibird
+
+           attacks
+               0: Ice Beam
+               kill_count: 1.0
+
+Rank: 0.0023584905660377358
+
+    Pokemon
+        a: Spearow
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.5
+               1: Double-Edge
+               kill_count: 0.5
+
+    Pokemon
+        b: Tentacool
+
+           attacks
+               0: Surf
+               kill_count: 0.8333333333333334
+               1: Sludge Bomb
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        c: Sunflora
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.3333333333333333
+               1: Petal Dance
+               kill_count: 0.6666666666666666
+
+    Pokemon
+        d: Pineco
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.8333333333333334
+               1: Giga Drain
+               kill_count: 0.16666666666666666
+
+Rank: 0.002358490566037736
+
+    Pokemon
+        a: Ekans
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.25
+               1: Sludge Bomb
+               kill_count: 0.5
+               2: CrunchCrystal Only
+               kill_count: 0.25
+
+    Pokemon
+        b: Abra
+
+           attacks
+               0: Psychic
+               kill_count: 0.25
+               1: Seismic Toss
+               kill_count: 0.5
+               2: Shadow Ball
+               kill_count: 0.25
+
+    Pokemon
+        c: Cleffa
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.25
+               1: Dizzy Punch
+               kill_count: 0.5
+               2: Shadow Ball
+               kill_count: 0.25
+
+Rank: 0.002751572327044025
+
+    Pokemon
+        a: Squirtle
+
+           attacks
+               0: Surf
+               kill_count: 0.7142857142857143
+               1: Seismic Toss
+               kill_count: 0.2857142857142857
+
+    Pokemon
+        b: Growlithe
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8571428571428571
+               1: Crunch
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        c: Quilava
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+    Pokemon
+        d: Swinub
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.42857142857142855
+               1: Earthquake
+               kill_count: 0.5714285714285714
+
+    Pokemon
+        e: Remoraid
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5714285714285714
+               1: Surf
+               kill_count: 0.42857142857142855
+
+Rank: 0.00294811320754717
+
+    Pokemon
+        a: Zubat
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.4
+               1: Double-Edge
+               kill_count: 0.4
+               2: Bite
+               kill_count: 0.2
+
+    Pokemon
+        b: Chikorita
+
+           attacks
+               0: AncientPower
+               kill_count: 0.2
+               1: Giga Drain
+               kill_count: 0.6
+               2: Body Slam
+               kill_count: 0.2
+
+    Pokemon
+        c: Spinarak
+
+           attacks
+               0: Psychic
+               kill_count: 0.4
+               1: Sludge Bomb
+               kill_count: 0.4
+               2: Night Shade
+               kill_count: 0.2
+
+Rank: 0.0031446540880503146
+
+    Pokemon
+        a: Shellder
+
+           attacks
+               0: Surf
+               kill_count: 0.875
+               1: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        b: Totodile
+
+           attacks
+               0: Surf
+               kill_count: 0.75
+               1: Crunch
+               kill_count: 0.25
+
+    Pokemon
+        c: Noctowl
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.875
+               1: Faint Attack
+               kill_count: 0.125
+
+    Pokemon
+        d: Chinchou
+
+           attacks
+               0: Thunderbolt
+               kill_count: 0.875
+               1: Surf
+               kill_count: 0.125
+
+    Pokemon
+        e: Togetic
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: Double-Edge
+               kill_count: 0.5
+
+    Pokemon
+        f: Mareep
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.5
+
+    Pokemon
+        g: Flaaffy
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.5
+
+    Pokemon
+        h: Jumpluff
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.875
+               1: Confusion
+               kill_count: 0.125
+
+    Pokemon
+        i: Wooper
+
+           attacks
+               0: Surf
+               kill_count: 0.5
+               1: Earthquake
+               kill_count: 0.5
+
+    Pokemon
+        j: Shuckle
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.25
+               1: Earthquake
+               kill_count: 0.75
+
+    Pokemon
+        k: Houndour
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.875
+               1: Crunch
+               kill_count: 0.125
+
+Rank: 0.003537735849056604
+
+    Pokemon
+        a: Pidgeotto
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.4444444444444444
+               1: Double-Edge
+               kill_count: 0.5555555555555556
+
+    Pokemon
+        b: Nidoran♀
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.3333333333333333
+               2: Bite
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        c: Nidoran♂
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.6666666666666666
+               1: Confusion
+               kill_count: 0.16666666666666666
+               2: Thunderbolt
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        d: Oddish
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.6666666666666666
+               1: Double-Edge
+               kill_count: 0.16666666666666666
+               2: Petal Dance
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        e: Meowth
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.6666666666666666
+               1: BubbleBeam
+               kill_count: 0.16666666666666666
+               2: Thunderbolt
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        f: Goldeen
+
+           attacks
+               0: Surf
+               kill_count: 0.8888888888888888
+               1: Double-Edge
+               kill_count: 0.1111111111111111
+
+    Pokemon
+        g: Ledian
+
+           attacks
+               0: Psybeam
+               kill_count: 0.3333333333333333
+               1: ThunderPunch
+               kill_count: 0.16666666666666666
+               2: Double-Edge
+               kill_count: 0.5
+
+Rank: 0.0037342767295597485
+
+    Pokemon
+        a: Magneton
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+Rank: 0.003930817610062893
+
+    Pokemon
+        a: Rattata
+
+           attacks
+               0: Flame Wheel
+               kill_count: 0.2
+               1: BubbleBeam
+               kill_count: 0.2
+               2: Thunderbolt
+               kill_count: 0.2
+               3: Double-Edge
+               kill_count: 0.4
+
+    Pokemon
+        b: Pikachu
+
+           attacks
+               0: Thunderbolt
+               kill_count: 0.8
+               1: Seismic Toss
+               kill_count: 0.2
+
+    Pokemon
+        c: Ponyta
+
+           attacks
+               0: Flamethrower
+               kill_count: 1.0
+
+    Pokemon
+        d: Ariados
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.7
+               1: Psychic
+               kill_count: 0.3
+
+Rank: 0.004127358490566038
+
+    Pokemon
+        a: Venonat
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.5714285714285714
+               1: Psychic
+               kill_count: 0.2857142857142857
+               2: Giga Drain
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        b: Weepinbell
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.7142857142857143
+               1: Double-Edge
+               kill_count: 0.14285714285714285
+               2: Giga Drain
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        c: Natu
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.14285714285714285
+               1: Psychic
+               kill_count: 0.7142857142857143
+               2: Night Shade
+               kill_count: 0.14285714285714285
+
+Rank: 0.004323899371069182
+
+    Pokemon
+        a: Sandshrew
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.09090909090909091
+               1: Earthquake
+               kill_count: 0.9090909090909091
+
+    Pokemon
+        b: Yanma
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.9090909090909091
+               1: Giga Drain
+               kill_count: 0.09090909090909091
+
+Rank: 0.0047169811320754715
+
+    Pokemon
+        a: Venusaur
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.6666666666666666
+               1: Petal Dance
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        b: Jigglypuff
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.3333333333333333
+               1: Thunderbolt
+               kill_count: 0.16666666666666666
+               2: Seismic Toss
+               kill_count: 0.3333333333333333
+               3: Double-Edge
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        c: Kadabra
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.16666666666666666
+               1: Psychic
+               kill_count: 0.3333333333333333
+               2: Seismic Toss
+               kill_count: 0.3333333333333333
+               3: Shadow Ball
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        d: Geodude
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.3333333333333333
+               1: Earthquake
+               kill_count: 0.6666666666666666
+
+    Pokemon
+        e: Phanpy
+
+           attacks
+               0: AncientPower
+               kill_count: 0.16666666666666666
+               1: Earthquake
+               kill_count: 0.8333333333333334
+
+Rank: 0.004716981132075472
+
+    Pokemon
+        a: Gloom
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.75
+               1: Double-Edge
+               kill_count: 0.125
+               2: Petal Dance
+               kill_count: 0.125
+
+    Pokemon
+        b: Psyduck
+
+           attacks
+               0: Surf
+               kill_count: 0.375
+               1: Psychic
+               kill_count: 0.375
+               2: Seismic Toss
+               kill_count: 0.25
+
+    Pokemon
+        c: Exeggcute
+
+           attacks
+               0: Psychic
+               kill_count: 0.75
+               1: Giga Drain
+               kill_count: 0.125
+               2: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        d: Tangela
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.75
+               1: Confusion
+               kill_count: 0.125
+               2: Giga Drain
+               kill_count: 0.125
+
+    Pokemon
+        e: Omanyte
+
+           attacks
+               0: AncientPower
+               kill_count: 0.25
+               1: Surf
+               kill_count: 0.625
+               2: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        f: Dratini
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.125
+               2: Outrage
+               kill_count: 0.375
+
+    Pokemon
+        g: Bayleef
+
+           attacks
+               0: AncientPower
+               kill_count: 0.5
+               1: Giga Drain
+               kill_count: 0.375
+               2: Body Slam
+               kill_count: 0.125
+
+Rank: 0.004913522012578616
+
+    Pokemon
+        a: Electrode
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+Rank: 0.005110062893081761
+
+    Pokemon
+        a: Graveler
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.3076923076923077
+               1: Earthquake
+               kill_count: 0.6923076923076923
+
+    Pokemon
+        b: Doduo
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.46153846153846156
+               1: Double-Edge
+               kill_count: 0.5384615384615384
+
+    Pokemon
+        c: Onix
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.15384615384615385
+               1: Earthquake
+               kill_count: 0.8461538461538461
+
+    Pokemon
+        d: Croconaw
+
+           attacks
+               0: Surf
+               kill_count: 0.8461538461538461
+               1: Crunch
+               kill_count: 0.15384615384615385
+
+Rank: 0.005306603773584905
+
+    Pokemon
+        a: Raichu
+
+           attacks
+               0: Thunderbolt
+               kill_count: 1.0
+
+Rank: 0.005306603773584906
+
+    Pokemon
+        a: Charmander
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.6666666666666666
+               1: Outrage
+               kill_count: 0.1111111111111111
+               2: Seismic Toss
+               kill_count: 0.2222222222222222
+
+    Pokemon
+        b: Grimer
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.4444444444444444
+               1: Thunderbolt
+               kill_count: 0.1111111111111111
+               2: Sludge Bomb
+               kill_count: 0.4444444444444444
+
+    Pokemon
+        c: Koffing
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.4444444444444444
+               1: Thunderbolt
+               kill_count: 0.1111111111111111
+               2: Sludge Bomb
+               kill_count: 0.4444444444444444
+
+    Pokemon
+        d: Hitmontop
+
+           attacks
+               0: Strength
+               kill_count: 0.5555555555555556
+               1: Mach Punch
+               kill_count: 0.3333333333333333
+               2: Pursuit
+               kill_count: 0.1111111111111111
+
+Rank: 0.00550314465408805
+
+    Pokemon
+        a: Nidorino
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.14285714285714285
+               1: Double-Edge
+               kill_count: 0.5714285714285714
+               2: Confusion
+               kill_count: 0.14285714285714285
+               3: Thunderbolt
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        b: Azumarill
+
+           attacks
+               0: Surf
+               kill_count: 0.9285714285714286
+               1: Double-Edge
+               kill_count: 0.07142857142857142
+
+Rank: 0.00589622641509434
+
+    Pokemon
+        a: Poliwag
+
+           attacks
+               0: Surf
+               kill_count: 0.8
+               1: Psychic
+               kill_count: 0.2
+
+    Pokemon
+        b: Kabuto
+
+           attacks
+               0: AncientPower
+               kill_count: 0.3
+               1: Surf
+               kill_count: 0.6
+               2: Giga Drain
+               kill_count: 0.1
+
+    Pokemon
+        c: Mantine
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.2
+               1: Surf
+               kill_count: 0.7
+               2: Ice Beam
+               kill_count: 0.1
+
+Rank: 0.006289308176100629
+
+    Pokemon
+        a: Clefairy
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.125
+               2: Seismic Toss
+               kill_count: 0.25
+               3: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        b: Machop
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: ThunderPunch
+               kill_count: 0.125
+               2: Vital Throw
+               kill_count: 0.25
+               3: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        c: Seaking
+
+           attacks
+               0: Surf
+               kill_count: 0.9375
+               1: Double-Edge
+               kill_count: 0.0625
+
+    Pokemon
+        d: Ampharos
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.25
+               1: Thunderbolt
+               kill_count: 0.75
+
+    Pokemon
+        e: Snubbull
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.5
+               1: Thunderbolt
+               kill_count: 0.125
+               2: Strength
+               kill_count: 0.25
+               3: Crunch
+               kill_count: 0.125
+
+    Pokemon
+        f: Teddiursa
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.5
+               1: ThunderPunch
+               kill_count: 0.125
+               2: Thrash
+               kill_count: 0.25
+               3: Crunch
+               kill_count: 0.125
+
+Rank: 0.006485849056603774
+
+    Pokemon
+        a: Larvitar
+
+           attacks
+               0: AncientPower
+               kill_count: 0.36363636363636365
+               1: Earthquake
+               kill_count: 0.5454545454545454
+               2: Crunch
+               kill_count: 0.09090909090909091
+
+Rank: 0.007075471698113208
+
+    Pokemon
+        a: Wartortle
+
+           attacks
+               0: Surf
+               kill_count: 0.75
+               1: Double-Edge
+               kill_count: 0.08333333333333333
+               2: Seismic Toss
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        b: Beedrill
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.6666666666666666
+               1: Double-Edge
+               kill_count: 0.16666666666666666
+               2: Mega Drain
+               kill_count: 0.16666666666666666
+
+    Pokemon
+        c: Nidorina
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.4444444444444444
+               1: Ice Beam
+               kill_count: 0.3333333333333333
+               2: Thunderbolt
+               kill_count: 0.1111111111111111
+               3: Bite
+               kill_count: 0.1111111111111111
+
+    Pokemon
+        d: Mankey
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.4444444444444444
+               1: Thunderbolt
+               kill_count: 0.1111111111111111
+               2: Karate Chop
+               kill_count: 0.3333333333333333
+               3: Double-Edge
+               kill_count: 0.1111111111111111
+
+    Pokemon
+        e: Slowpoke
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.2222222222222222
+               1: Psychic
+               kill_count: 0.4444444444444444
+               2: Surf
+               kill_count: 0.2222222222222222
+               3: Shadow Ball
+               kill_count: 0.1111111111111111
+
+    Pokemon
+        f: Gastly
+
+           attacks
+               0: Shadow Ball
+               kill_count: 0.1111111111111111
+               1: Night Shade
+               kill_count: 0.3333333333333333
+               2: Psychic
+               kill_count: 0.2222222222222222
+               3: Thunderbolt
+               kill_count: 0.3333333333333333
+
+    Pokemon
+        g: Hitmonlee
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.6111111111111112
+               1: Mach Punch
+               kill_count: 0.3888888888888889
+
+    Pokemon
+        h: Staryu
+
+           attacks
+               0: Surf
+               kill_count: 0.75
+               1: Psychic
+               kill_count: 0.16666666666666666
+               2: Thunderbolt
+               kill_count: 0.08333333333333333
+
+    Pokemon
+        i: Porygon
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.4444444444444444
+               1: Psychic
+               kill_count: 0.2222222222222222
+               2: Thunderbolt
+               kill_count: 0.1111111111111111
+               3: Ice Beam
+               kill_count: 0.2222222222222222
+
+Rank: 0.007468553459119497
+
+    Pokemon
+        a: Pinsir
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.9473684210526315
+               1: Seismic Toss
+               kill_count: 0.05263157894736842
+
+    Pokemon
+        b: Murkrow
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.8947368421052632
+               1: Faint Attack
+               kill_count: 0.10526315789473684
+
+    Pokemon
+        c: Forretress
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.9473684210526315
+               1: Giga Drain
+               kill_count: 0.05263157894736842
+
+Rank: 0.0076650943396226415
+
+    Pokemon
+        a: Venomoth
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.6153846153846154
+               1: Psychic
+               kill_count: 0.3076923076923077
+               2: Giga Drain
+               kill_count: 0.07692307692307693
+
+    Pokemon
+        b: Haunter
+
+           attacks
+               0: Psychic
+               kill_count: 0.46153846153846156
+               1: Shadow Ball
+               kill_count: 0.23076923076923078
+               2: Thunderbolt
+               kill_count: 0.3076923076923077
+
+    Pokemon
+        c: Misdreavus
+
+           attacks
+               0: Shadow Ball
+               kill_count: 0.3076923076923077
+               1: Thunderbolt
+               kill_count: 0.3076923076923077
+               2: Psychic
+               kill_count: 0.38461538461538464
+
+Rank: 0.007861635220125786
+
+    Pokemon
+        a: Drowzee
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.25
+               1: Psychic
+               kill_count: 0.25
+               2: ThunderPunch
+               kill_count: 0.125
+               3: Seismic Toss
+               kill_count: 0.25
+               4: Shadow Ball
+               kill_count: 0.125
+
+    Pokemon
+        b: Aipom
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.6
+               1: Thunderbolt
+               kill_count: 0.1
+               2: Strength
+               kill_count: 0.2
+               3: Shadow Ball
+               kill_count: 0.1
+
+Rank: 0.008254716981132075
+
+    Pokemon
+        a: Charmeleon
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.7857142857142857
+               1: Outrage
+               kill_count: 0.07142857142857142
+               2: Seismic Toss
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        b: Pupitar
+
+           attacks
+               0: AncientPower
+               kill_count: 0.2857142857142857
+               1: Earthquake
+               kill_count: 0.6428571428571429
+               2: Crunch
+               kill_count: 0.07142857142857142
+
+Rank: 0.008647798742138365
+
+    Pokemon
+        a: Sandslash
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.09090909090909091
+               1: Earthquake
+               kill_count: 0.9090909090909091
+
+    Pokemon
+        b: Cubone
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.36363636363636365
+               1: Earthquake
+               kill_count: 0.36363636363636365
+               2: ThunderPunch
+               kill_count: 0.09090909090909091
+               3: Seismic Toss
+               kill_count: 0.18181818181818182
+
+Rank: 0.008844339622641511
+
+    Pokemon
+        a: Vileplume
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.8
+               1: Double-Edge
+               kill_count: 0.13333333333333333
+               2: Petal Dance
+               kill_count: 0.06666666666666667
+
+    Pokemon
+        b: Umbreon
+
+           attacks
+               0: Faint Attack
+               kill_count: 0.6
+               1: Psychic
+               kill_count: 0.26666666666666666
+               2: Shadow Ball
+               kill_count: 0.13333333333333333
+
+    Pokemon
+        c: Magby
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8666666666666667
+               1: ThunderPunch
+               kill_count: 0.06666666666666667
+               2: Psychic
+               kill_count: 0.06666666666666667
+
+Rank: 0.009040880503144654
+
+    Pokemon
+        a: Pidgeot
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.6521739130434783
+               1: Double-Edge
+               kill_count: 0.34782608695652173
+
+Rank: 0.009433962264150943
+
+    Pokemon
+        a: Heracross
+
+           attacks
+               0: Strength
+               kill_count: 0.125
+               1: Earthquake
+               kill_count: 0.875
+
+Rank: 0.009433962264150945
+
+    Pokemon
+        a: Flareon
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.75
+               1: Shadow Ball
+               kill_count: 0.125
+               2: Double-Edge
+               kill_count: 0.125
+
+    Pokemon
+        b: Octillery
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.3125
+               1: Surf
+               kill_count: 0.625
+               2: Ice Beam
+               kill_count: 0.0625
+
+    Pokemon
+        c: Elekid
+
+           attacks
+               0: Thunderbolt
+               kill_count: 0.625
+               1: Fire Punch
+               kill_count: 0.25
+               2: Psychic
+               kill_count: 0.125
+
+Rank: 0.009827044025157232
+
+    Pokemon
+        a: Golem
+
+           attacks
+               0: Earthquake
+               kill_count: 0.84
+               1: Flamethrower
+               kill_count: 0.16
+
+    Pokemon
+        b: Scyther
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.8
+               1: Double-Edge
+               kill_count: 0.2
+
+    Pokemon
+        c: Qwilfish
+
+           attacks
+               0: Surf
+               kill_count: 0.72
+               1: Sludge Bomb
+               kill_count: 0.28
+
+Rank: 0.010023584905660377
+
+    Pokemon
+        a: Skarmory
+
+           attacks
+               0: Drill Peck
+               kill_count: 1.0
+
+Rank: 0.010023584905660379
+
+    Pokemon
+        a: Seadra
+
+           attacks
+               0: Surf
+               kill_count: 0.8823529411764706
+               1: Double-Edge
+               kill_count: 0.058823529411764705
+               2: Ice Beam
+               kill_count: 0.058823529411764705
+
+    Pokemon
+        b: Piloswine
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.35294117647058826
+               1: Earthquake
+               kill_count: 0.5882352941176471
+               2: AncientPower
+               kill_count: 0.058823529411764705
+
+Rank: 0.010220125786163521
+
+    Pokemon
+        a: Rhyhorn
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.3076923076923077
+               1: Earthquake
+               kill_count: 0.46153846153846156
+               2: Thunderbolt
+               kill_count: 0.07692307692307693
+               3: Crunch
+               kill_count: 0.15384615384615385
+
+    Pokemon
+        b: Lanturn
+
+           attacks
+               0: Surf
+               kill_count: 0.19230769230769232
+               1: Thunderbolt
+               kill_count: 0.8076923076923077
+
+    Pokemon
+        c: Corsola
+
+           attacks
+               0: AncientPower
+               kill_count: 0.23076923076923078
+               1: Surf
+               kill_count: 0.38461538461538464
+               2: Psychic
+               kill_count: 0.23076923076923078
+               3: Ice Beam
+               kill_count: 0.15384615384615385
+
+Rank: 0.01061320754716981
+
+    Pokemon
+        a: Espeon
+
+           attacks
+               0: Psychic
+               kill_count: 0.9629629629629629
+               1: Shadow Ball
+               kill_count: 0.037037037037037035
+
+Rank: 0.010613207547169812
+
+    Pokemon
+        a: Victreebel
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.7777777777777778
+               1: Double-Edge
+               kill_count: 0.1111111111111111
+               2: Giga Drain
+               kill_count: 0.1111111111111111
+
+    Pokemon
+        b: Cloyster
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.6666666666666666
+               1: Surf
+               kill_count: 0.2777777777777778
+               2: Double-Edge
+               kill_count: 0.05555555555555555
+
+Rank: 0.010809748427672955
+
+    Pokemon
+        a: Wigglytuff
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.36363636363636365
+               1: Psychic
+               kill_count: 0.09090909090909091
+               2: Thunderbolt
+               kill_count: 0.09090909090909091
+               3: Double-Edge
+               kill_count: 0.2727272727272727
+               4: Ice Beam
+               kill_count: 0.18181818181818182
+
+    Pokemon
+        b: Parasect
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.36363636363636365
+               1: Psybeam
+               kill_count: 0.2727272727272727
+               2: Dig
+               kill_count: 0.18181818181818182
+               3: Giga Drain
+               kill_count: 0.09090909090909091
+               4: Sludge Bomb
+               kill_count: 0.09090909090909091
+
+    Pokemon
+        c: Lickitung
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.36363636363636365
+               1: Thunderbolt
+               kill_count: 0.09090909090909091
+               2: Seismic Toss
+               kill_count: 0.09090909090909091
+               3: Ice Beam
+               kill_count: 0.2727272727272727
+               4: Double-Edge
+               kill_count: 0.18181818181818182
+
+Rank: 0.0110062893081761
+
+    Pokemon
+        a: Arbok
+
+           attacks
+               0: Sludge Bomb
+               kill_count: 0.6428571428571429
+               1: Double-Edge
+               kill_count: 0.14285714285714285
+               2: CrunchCrystal Only
+               kill_count: 0.07142857142857142
+               3: Earthquake
+               kill_count: 0.14285714285714285
+
+Rank: 0.01139937106918239
+
+    Pokemon
+        a: Houndoom
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8620689655172413
+               1: Crunch
+               kill_count: 0.13793103448275862
+
+Rank: 0.011792452830188678
+
+    Pokemon
+        a: Machoke
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: ThunderPunch
+               kill_count: 0.08333333333333333
+               2: Vital Throw
+               kill_count: 0.16666666666666666
+               3: Ice Punch
+               kill_count: 0.16666666666666666
+               4: Double-Edge
+               kill_count: 0.08333333333333333
+
+    Pokemon
+        b: Mr. Mime
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.25
+               1: Psychic
+               kill_count: 0.3333333333333333
+               2: Thunderbolt
+               kill_count: 0.16666666666666666
+               3: Seismic Toss
+               kill_count: 0.16666666666666666
+               4: Shadow Ball
+               kill_count: 0.08333333333333333
+
+Rank: 0.01179245283018868
+
+    Pokemon
+        a: Dewgong
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.75
+               1: Surf
+               kill_count: 0.2
+               2: Double-Edge
+               kill_count: 0.05
+
+Rank: 0.012578616352201259
+
+    Pokemon
+        a: Jynx
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.5
+               1: Psychic
+               kill_count: 0.3125
+               2: Seismic Toss
+               kill_count: 0.125
+               3: Shadow Ball
+               kill_count: 0.0625
+
+    Pokemon
+        b: Omastar
+
+           attacks
+               0: AncientPower
+               kill_count: 0.25
+               1: Surf
+               kill_count: 0.5625
+               2: Double-Edge
+               kill_count: 0.0625
+               3: Seismic Toss
+               kill_count: 0.125
+
+Rank: 0.012775157232704401
+
+    Pokemon
+        a: Dragonair
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.38461538461538464
+               1: Surf
+               kill_count: 0.15384615384615385
+               2: Thunderbolt
+               kill_count: 0.07692307692307693
+               3: Outrage
+               kill_count: 0.3076923076923077
+               4: Ice Beam
+               kill_count: 0.07692307692307693
+
+    Pokemon
+        b: Sudowoodo
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.3076923076923077
+               1: Ice Punch
+               kill_count: 0.15384615384615385
+               2: Earthquake
+               kill_count: 0.3076923076923077
+               3: ThunderPunch
+               kill_count: 0.07692307692307693
+               4: Faint Attack
+               kill_count: 0.15384615384615385
+
+Rank: 0.012971698113207548
+
+    Pokemon
+        a: Fearow
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.5757575757575758
+               1: Double-Edge
+               kill_count: 0.42424242424242425
+
+    Pokemon
+        b: Ninetales
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.9393939393939394
+               1: Double-Edge
+               kill_count: 0.06060606060606061
+
+    Pokemon
+        c: Weezing
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.45454545454545453
+               1: Thunderbolt
+               kill_count: 0.13636363636363635
+               2: Sludge Bomb
+               kill_count: 0.4090909090909091
+
+    Pokemon
+        d: Gligar
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.2727272727272727
+               1: Earthquake
+               kill_count: 0.7272727272727273
+
+Rank: 0.013364779874213837
+
+    Pokemon
+        a: Golbat
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.7647058823529411
+               1: Giga Drain
+               kill_count: 0.058823529411764705
+               2: Double-Edge
+               kill_count: 0.11764705882352941
+               3: Bite
+               kill_count: 0.058823529411764705
+
+    Pokemon
+        b: Stantler
+
+           attacks
+               0: Psychic
+               kill_count: 0.5294117647058824
+               1: Earthquake
+               kill_count: 0.23529411764705882
+               2: Headbutt
+               kill_count: 0.17647058823529413
+               3: Bite
+               kill_count: 0.058823529411764705
+
+Rank: 0.013757861635220124
+
+    Pokemon
+        a: Hitmonchan
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.42857142857142855
+               1: Ice Punch
+               kill_count: 0.14285714285714285
+               2: ThunderPunch
+               kill_count: 0.14285714285714285
+               3: Mach Punch
+               kill_count: 0.21428571428571427
+               4: Double-Edge
+               kill_count: 0.07142857142857142
+
+    Pokemon
+        b: Dunsparce
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.5
+               1: AncientPower
+               kill_count: 0.14285714285714285
+               2: Thunderbolt
+               kill_count: 0.14285714285714285
+               3: Strength
+               kill_count: 0.14285714285714285
+               4: Bite
+               kill_count: 0.07142857142857142
+
+Rank: 0.014150943396226415
+
+    Pokemon
+        a: Kingler
+
+           attacks
+               0: Surf
+               kill_count: 0.8333333333333334
+               1: Ice Beam
+               kill_count: 0.08333333333333333
+               2: Double-Edge
+               kill_count: 0.08333333333333333
+
+Rank: 0.014544025157232705
+
+    Pokemon
+        a: Quagsire
+
+           attacks
+               0: Earthquake
+               kill_count: 0.7837837837837838
+               1: Surf
+               kill_count: 0.21621621621621623
+
+Rank: 0.01474056603773585
+
+    Pokemon
+        a: Xatu
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.36
+               1: Psychic
+               kill_count: 0.6
+               2: Night Shade
+               kill_count: 0.04
+
+Rank: 0.015330188679245283
+
+    Pokemon
+        a: Jolteon
+
+           attacks
+               0: Thunderbolt
+               kill_count: 0.9230769230769231
+               1: Shadow Ball
+               kill_count: 0.07692307692307693
+
+Rank: 0.015723270440251572
+
+    Pokemon
+        a: Poliwhirl
+
+           attacks
+               0: Surf
+               kill_count: 0.7
+               1: Psychic
+               kill_count: 0.15
+               2: Seismic Toss
+               kill_count: 0.1
+               3: Ice Beam
+               kill_count: 0.05
+
+    Pokemon
+        b: Vaporeon
+
+           attacks
+               0: Surf
+               kill_count: 0.7
+               1: Ice Beam
+               kill_count: 0.1
+               2: Shadow Ball
+               kill_count: 0.15
+               3: Double-Edge
+               kill_count: 0.05
+
+Rank: 0.01650943396226415
+
+    Pokemon
+        a: Persian
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.6071428571428571
+               1: Thunderbolt
+               kill_count: 0.25
+               2: BubbleBeam
+               kill_count: 0.14285714285714285
+
+    Pokemon
+        b: Politoed
+
+           attacks
+               0: Surf
+               kill_count: 0.7142857142857143
+               1: Psychic
+               kill_count: 0.19047619047619047
+               2: Ice Beam
+               kill_count: 0.047619047619047616
+               3: Earthquake
+               kill_count: 0.047619047619047616
+
+Rank: 0.01690251572327044
+
+    Pokemon
+        a: Rapidash
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.9767441860465116
+               1: Double-Edge
+               kill_count: 0.023255813953488372
+
+Rank: 0.017099056603773585
+
+    Pokemon
+        a: Steelix
+
+           attacks
+               0: Crunch
+               kill_count: 0.27586206896551724
+               1: Earthquake
+               kill_count: 0.6551724137931034
+               2: Strength
+               kill_count: 0.06896551724137931
+
+Rank: 0.017688679245283022
+
+    Pokemon
+        a: Crobat
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.9
+               1: Giga Drain
+               kill_count: 0.03333333333333333
+               2: Bite
+               kill_count: 0.06666666666666667
+
+Rank: 0.018081761006289308
+
+    Pokemon
+        a: Porygon2
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.34782608695652173
+               1: Tri Attack
+               kill_count: 0.21739130434782608
+               2: Thunderbolt
+               kill_count: 0.17391304347826086
+               3: Psychic
+               kill_count: 0.2608695652173913
+
+Rank: 0.01867138364779874
+
+    Pokemon
+        a: Girafarig
+
+           attacks
+               0: Psychic
+               kill_count: 0.6842105263157895
+               1: Shadow Ball
+               kill_count: 0.05263157894736842
+               2: Thunderbolt
+               kill_count: 0.05263157894736842
+               3: Earthquake
+               kill_count: 0.15789473684210525
+               4: Crunch
+               kill_count: 0.05263157894736842
+
+Rank: 0.018867924528301886
+
+    Pokemon
+        a: Alakazam
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.1875
+               1: Psychic
+               kill_count: 0.5
+               2: ThunderPunch
+               kill_count: 0.0625
+               3: Seismic Toss
+               kill_count: 0.125
+               4: Ice Punch
+               kill_count: 0.0625
+               5: Shadow Ball
+               kill_count: 0.0625
+
+    Pokemon
+        b: Exeggutor
+
+           attacks
+               0: Psychic
+               kill_count: 0.3333333333333333
+               1: AncientPower
+               kill_count: 0.08333333333333333
+               2: Solarbeam
+               kill_count: 0.4583333333333333
+               3: Sludge Bomb
+               kill_count: 0.125
+
+Rank: 0.019654088050314465
+
+    Pokemon
+        a: Dodrio
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.48
+               1: Double-Edge
+               kill_count: 0.52
+
+    Pokemon
+        b: Meganium
+
+           attacks
+               0: AncientPower
+               kill_count: 0.32
+               1: Earthquake
+               kill_count: 0.56
+               2: Giga Drain
+               kill_count: 0.08
+               3: Body Slam
+               kill_count: 0.04
+
+    Pokemon
+        c: Suicune
+
+           attacks
+               0: Surf
+               kill_count: 0.9
+               1: Ice Beam
+               kill_count: 0.1
+
+Rank: 0.020047169811320757
+
+    Pokemon
+        a: Magmar
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8235294117647058
+               1: Psychic
+               kill_count: 0.11764705882352941
+               2: ThunderPunch
+               kill_count: 0.058823529411764705
+
+    Pokemon
+        b: Scizor
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.8529411764705882
+               1: Strength
+               kill_count: 0.08823529411764706
+               2: Pursuit
+               kill_count: 0.058823529411764705
+
+Rank: 0.020636792452830188
+
+    Pokemon
+        a: Marowak
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.19047619047619047
+               1: Earthquake
+               kill_count: 0.6666666666666666
+               2: BubbleBeam
+               kill_count: 0.047619047619047616
+               3: ThunderPunch
+               kill_count: 0.047619047619047616
+               4: AncientPower
+               kill_count: 0.047619047619047616
+
+Rank: 0.02122641509433962
+
+    Pokemon
+        a: Hypno
+
+           attacks
+               0: Psychic
+               kill_count: 0.3888888888888889
+               1: Fire Punch
+               kill_count: 0.1111111111111111
+               2: ThunderPunch
+               kill_count: 0.16666666666666666
+               3: Shadow Ball
+               kill_count: 0.1111111111111111
+               4: Seismic Toss
+               kill_count: 0.1111111111111111
+               5: Ice Punch
+               kill_count: 0.1111111111111111
+
+Rank: 0.02240566037735849
+
+    Pokemon
+        a: Granbull
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.21052631578947367
+               1: Thunderbolt
+               kill_count: 0.2631578947368421
+               2: Shadow Ball
+               kill_count: 0.05263157894736842
+               3: Ice Punch
+               kill_count: 0.21052631578947367
+               4: Strength
+               kill_count: 0.15789473684210525
+               5: Crunch
+               kill_count: 0.10526315789473684
+
+Rank: 0.022405660377358493
+
+    Pokemon
+        a: Donphan
+
+           attacks
+               0: AncientPower
+               kill_count: 0.21052631578947367
+               1: Earthquake
+               kill_count: 0.7631578947368421
+               2: Water GunCrystal Only
+               kill_count: 0.02631578947368421
+
+Rank: 0.02279874213836478
+
+    Pokemon
+        a: Tentacruel
+
+           attacks
+               0: Surf
+               kill_count: 0.6896551724137931
+               1: Sludge Bomb
+               kill_count: 0.20689655172413793
+               2: Ice Beam
+               kill_count: 0.06896551724137931
+               3: Giga Drain
+               kill_count: 0.034482758620689655
+
+    Pokemon
+        b: Zapdos
+
+           attacks
+               0: Drill Peck
+               kill_count: 0.5344827586206896
+               1: Thunderbolt
+               kill_count: 0.46551724137931033
+
+Rank: 0.023584905660377357
+
+    Pokemon
+        a: Clefable
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.2
+               1: Psychic
+               kill_count: 0.15
+               2: Ice Beam
+               kill_count: 0.35
+               3: Thunderbolt
+               kill_count: 0.1
+               4: Double-Edge
+               kill_count: 0.15
+               5: Seismic Toss
+               kill_count: 0.05
+
+Rank: 0.02358490566037736
+
+    Pokemon
+        a: Articuno
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.925
+               1: Double-Edge
+               kill_count: 0.05
+               2: BubbleBeam
+               kill_count: 0.025
+
+Rank: 0.024174528301886794
+
+    Pokemon
+        a: Moltres
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8780487804878049
+               1: Double-Edge
+               kill_count: 0.04878048780487805
+               2: Wing Attack
+               kill_count: 0.07317073170731707
+
+Rank: 0.02437106918238994
+
+    Pokemon
+        a: Golduck
+
+           attacks
+               0: Surf
+               kill_count: 0.6774193548387096
+               1: Psychic
+               kill_count: 0.1935483870967742
+               2: Ice Beam
+               kill_count: 0.0967741935483871
+               3: Seismic Toss
+               kill_count: 0.03225806451612903
+
+Rank: 0.02535377358490566
+
+    Pokemon
+        a: Dugtrio
+
+           attacks
+               0: Earthquake
+               kill_count: 0.8604651162790697
+               1: AncientPower
+               kill_count: 0.09302325581395349
+               2: Sludge Bomb
+               kill_count: 0.046511627906976744
+
+Rank: 0.02751572327044025
+
+    Pokemon
+        a: Furret
+
+           attacks
+               0: Fire Punch
+               kill_count: 0.25
+               1: Double-Edge
+               kill_count: 0.35714285714285715
+               2: Surf
+               kill_count: 0.2857142857142857
+               3: ThunderPunch
+               kill_count: 0.07142857142857142
+               4: Ice Punch
+               kill_count: 0.03571428571428571
+
+    Pokemon
+        b: Slowking
+
+           attacks
+               0: Surf
+               kill_count: 0.4642857142857143
+               1: Flamethrower
+               kill_count: 0.10714285714285714
+               2: Psychic
+               kill_count: 0.2857142857142857
+               3: Shadow Ball
+               kill_count: 0.10714285714285714
+               4: Earthquake
+               kill_count: 0.03571428571428571
+
+Rank: 0.03046383647798742
+
+    Pokemon
+        a: Slowbro
+
+           attacks
+               0: Surf
+               kill_count: 0.4838709677419355
+               1: Flamethrower
+               kill_count: 0.0967741935483871
+               2: Psychic
+               kill_count: 0.2903225806451613
+               3: Ice Beam
+               kill_count: 0.03225806451612903
+               4: Shadow Ball
+               kill_count: 0.0967741935483871
+
+Rank: 0.030660377358490566
+
+    Pokemon
+        a: Kingdra
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.2692307692307692
+               1: Surf
+               kill_count: 0.7115384615384616
+               2: DragonBreath
+               kill_count: 0.019230769230769232
+
+Rank: 0.03125
+
+    Pokemon
+        a: Typhlosion
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.660377358490566
+               1: Earthquake
+               kill_count: 0.24528301886792453
+               2: ThunderPunch
+               kill_count: 0.09433962264150944
+
+Rank: 0.031839622641509434
+
+    Pokemon
+        a: Gengar
+
+           attacks
+               0: Psychic
+               kill_count: 0.3333333333333333
+               1: Fire Punch
+               kill_count: 0.18518518518518517
+               2: Thunderbolt
+               kill_count: 0.18518518518518517
+               3: Seismic Toss
+               kill_count: 0.07407407407407407
+               4: Shadow Ball
+               kill_count: 0.1111111111111111
+               5: Ice Punch
+               kill_count: 0.1111111111111111
+
+Rank: 0.03341194968553459
+
+    Pokemon
+        a: Poliwrath
+
+           attacks
+               0: Surf
+               kill_count: 0.7647058823529411
+               1: Psychic
+               kill_count: 0.11764705882352941
+               2: Earthquake
+               kill_count: 0.058823529411764705
+               3: Ice Beam
+               kill_count: 0.029411764705882353
+               4: Seismic Toss
+               kill_count: 0.029411764705882353
+
+Rank: 0.03537735849056604
+
+    Pokemon
+        a: Primeape
+
+           attacks
+               0: Ice Punch
+               kill_count: 0.16666666666666666
+               1: Thunderbolt
+               kill_count: 0.23333333333333334
+               2: Fire Punch
+               kill_count: 0.3
+               3: Karate Chop
+               kill_count: 0.23333333333333334
+               4: Dig
+               kill_count: 0.03333333333333333
+               5: Double-Edge
+               kill_count: 0.03333333333333333
+
+    Pokemon
+        b: Rhydon
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.1111111111111111
+               1: Ice Beam
+               kill_count: 0.2222222222222222
+               2: Earthquake
+               kill_count: 0.5833333333333334
+               3: Thunderbolt
+               kill_count: 0.027777777777777776
+               4: Crunch
+               kill_count: 0.05555555555555555
+
+Rank: 0.036163522012578615
+
+    Pokemon
+        a: Electabuzz
+
+           attacks
+               0: Psychic
+               kill_count: 0.1956521739130435
+               1: Thunderbolt
+               kill_count: 0.5652173913043478
+               2: Fire Punch
+               kill_count: 0.15217391304347827
+               3: Ice Punch
+               kill_count: 0.08695652173913043
+
+Rank: 0.03714622641509434
+
+    Pokemon
+        a: Ursaring
+
+           attacks
+               0: Thrash
+               kill_count: 0.2222222222222222
+               1: Fire Punch
+               kill_count: 0.14814814814814814
+               2: Earthquake
+               kill_count: 0.14814814814814814
+               3: Ice Punch
+               kill_count: 0.2962962962962963
+               4: Crunch
+               kill_count: 0.1111111111111111
+               5: ThunderPunch
+               kill_count: 0.037037037037037035
+               6: Seismic Toss
+               kill_count: 0.037037037037037035
+
+Rank: 0.038325471698113206
+
+    Pokemon
+        a: Kabutops
+
+           attacks
+               0: AncientPower
+               kill_count: 0.20512820512820512
+               1: Surf
+               kill_count: 0.48717948717948717
+               2: Ice Beam
+               kill_count: 0.2564102564102564
+               3: Giga Drain
+               kill_count: 0.02564102564102564
+               4: Double-Edge
+               kill_count: 0.02564102564102564
+
+Rank: 0.03852201257861635
+
+    Pokemon
+        a: Muk
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.2653061224489796
+               1: Thunderbolt
+               kill_count: 0.30612244897959184
+               2: Sludge Bomb
+               kill_count: 0.40816326530612246
+               3: Ice Punch
+               kill_count: 0.02040816326530612
+
+Rank: 0.041273584905660375
+
+    Pokemon
+        a: Blastoise
+
+           attacks
+               0: Surf
+               kill_count: 0.7619047619047619
+               1: Earthquake
+               kill_count: 0.047619047619047616
+               2: Ice Beam
+               kill_count: 0.11904761904761904
+               3: Double-Edge
+               kill_count: 0.023809523809523808
+               4: Seismic Toss
+               kill_count: 0.047619047619047616
+
+    Pokemon
+        b: Nidoqueen
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.2571428571428571
+               1: Flamethrower
+               kill_count: 0.17142857142857143
+               2: Earthquake
+               kill_count: 0.45714285714285713
+               3: Surf
+               kill_count: 0.05714285714285714
+               4: Thunderbolt
+               kill_count: 0.02857142857142857
+               5: Shadow Ball
+               kill_count: 0.02857142857142857
+
+    Pokemon
+        c: Machamp
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.4
+               1: Earthquake
+               kill_count: 0.13333333333333333
+               2: Vital Throw
+               kill_count: 0.2
+               3: ThunderPunch
+               kill_count: 0.06666666666666667
+               4: Double-Edge
+               kill_count: 0.06666666666666667
+               5: Ice Punch
+               kill_count: 0.1
+               6: Seismic Toss
+               kill_count: 0.03333333333333333
+
+    Pokemon
+        d: Lapras
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.5
+               1: Psychic
+               kill_count: 0.09523809523809523
+               2: Surf
+               kill_count: 0.14285714285714285
+               3: Thunderbolt
+               kill_count: 0.23809523809523808
+               4: Double-Edge
+               kill_count: 0.023809523809523808
+
+Rank: 0.04245283018867925
+
+    Pokemon
+        a: Entei
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.9444444444444444
+               1: Strength
+               kill_count: 0.013888888888888888
+               2: Dig
+               kill_count: 0.041666666666666664
+
+Rank: 0.04363207547169811
+
+    Pokemon
+        a: Raticate
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.4864864864864865
+               1: Ice Beam
+               kill_count: 0.16216216216216217
+               2: Flame Wheel
+               kill_count: 0.08108108108108109
+               3: BubbleBeam
+               kill_count: 0.16216216216216217
+               4: Dig
+               kill_count: 0.02702702702702703
+               5: Thunderbolt
+               kill_count: 0.08108108108108109
+
+Rank: 0.0440251572327044
+
+    Pokemon
+        a: Arcanine
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.8392857142857143
+               1: Double-Edge
+               kill_count: 0.03571428571428571
+               2: Crunch
+               kill_count: 0.08928571428571429
+               3: Dig
+               kill_count: 0.03571428571428571
+
+Rank: 0.044221698113207544
+
+    Pokemon
+        a: Charizard
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.6888888888888889
+               1: AncientPower
+               kill_count: 0.08888888888888889
+               2: Earthquake
+               kill_count: 0.17777777777777778
+               3: Outrage
+               kill_count: 0.022222222222222223
+               4: Wing Attack
+               kill_count: 0.022222222222222223
+
+Rank: 0.04716981132075471
+
+    Pokemon
+        a: Feraligatr
+
+           attacks
+               0: Surf
+               kill_count: 0.6875
+               1: Ice Beam
+               kill_count: 0.125
+               2: Earthquake
+               kill_count: 0.020833333333333332
+               3: Crunch
+               kill_count: 0.0625
+               4: AncientPower
+               kill_count: 0.10416666666666667
+
+Rank: 0.04952830188679245
+
+    Pokemon
+        a: Nidoking
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.23809523809523808
+               1: Flamethrower
+               kill_count: 0.19047619047619047
+               2: Earthquake
+               kill_count: 0.4523809523809524
+               3: Surf
+               kill_count: 0.07142857142857142
+               4: Thunderbolt
+               kill_count: 0.023809523809523808
+               5: Shadow Ball
+               kill_count: 0.023809523809523808
+
+Rank: 0.050314465408805034
+
+    Pokemon
+        a: Raikou
+
+           attacks
+               0: Strength
+               kill_count: 0.015625
+               1: Thunderbolt
+               kill_count: 0.734375
+               2: Dig
+               kill_count: 0.109375
+               3: Crunch
+               kill_count: 0.140625
+
+Rank: 0.05208333333333333
+
+    Pokemon
+        a: Celebi
+
+           attacks
+               0: Psychic
+               kill_count: 0.6792452830188679
+               1: AncientPower
+               kill_count: 0.09433962264150944
+               2: Shadow Ball
+               kill_count: 0.11320754716981132
+               3: Mud-Slap
+               kill_count: 0.018867924528301886
+               4: Giga Drain
+               kill_count: 0.09433962264150944
+
+Rank: 0.05994496855345913
+
+    Pokemon
+        a: Starmie
+
+           attacks
+               0: Psychic
+               kill_count: 0.3114754098360656
+               1: Surf
+               kill_count: 0.4262295081967213
+               2: Ice Beam
+               kill_count: 0.06557377049180328
+               3: Thunderbolt
+               kill_count: 0.18032786885245902
+               4: Double-Edge
+               kill_count: 0.01639344262295082
+
+    Pokemon
+        b: Sneasel
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.639344262295082
+               1: Surf
+               kill_count: 0.26229508196721313
+               2: Dig
+               kill_count: 0.03278688524590164
+               3: Faint Attack
+               kill_count: 0.04918032786885246
+               4: Shadow Ball
+               kill_count: 0.01639344262295082
+
+Rank: 0.06584119496855347
+
+    Pokemon
+        a: Gyarados
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.26865671641791045
+               1: Thunderbolt
+               kill_count: 0.23880597014925373
+               2: Flamethrower
+               kill_count: 0.13432835820895522
+               3: Surf
+               kill_count: 0.34328358208955223
+               4: Double-Edge
+               kill_count: 0.014925373134328358
+
+Rank: 0.0660377358490566
+
+    Pokemon
+        a: Tyranitar
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.14583333333333334
+               1: AncientPower
+               kill_count: 0.14583333333333334
+               2: Thunderbolt
+               kill_count: 0.1875
+               3: Earthquake
+               kill_count: 0.20833333333333334
+               4: Crunch
+               kill_count: 0.22916666666666666
+               5: Ice Beam
+               kill_count: 0.041666666666666664
+               6: Surf
+               kill_count: 0.041666666666666664
+
+Rank: 0.07075471698113207
+
+    Pokemon
+        a: Kangaskhan
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.15
+               1: Double-Edge
+               kill_count: 0.21666666666666667
+               2: Earthquake
+               kill_count: 0.2
+               3: Ice Beam
+               kill_count: 0.21666666666666667
+               4: Surf
+               kill_count: 0.13333333333333333
+               5: Thunderbolt
+               kill_count: 0.08333333333333333
+
+Rank: 0.08726415094339622
+
+    Pokemon
+        a: Aerodactyl
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.14864864864864866
+               1: Earthquake
+               kill_count: 0.35135135135135137
+               2: Flamethrower
+               kill_count: 0.22972972972972974
+               3: AncientPower
+               kill_count: 0.1891891891891892
+               4: Double-Edge
+               kill_count: 0.05405405405405406
+               5: Bite
+               kill_count: 0.02702702702702703
+
+Rank: 0.08962264150943397
+
+    Pokemon
+        a: Miltank
+
+           attacks
+               0: Ice Beam
+               kill_count: 0.19298245614035087
+               1: Fire Punch
+               kill_count: 0.17543859649122806
+               2: Thunderbolt
+               kill_count: 0.14035087719298245
+               3: Earthquake
+               kill_count: 0.14035087719298245
+               4: Shadow Ball
+               kill_count: 0.07017543859649122
+               5: Surf
+               kill_count: 0.19298245614035087
+               6: Seismic Toss
+               kill_count: 0.03508771929824561
+               7: Body Slam
+               kill_count: 0.05263157894736842
+
+Rank: 0.09433962264150943
+
+    Pokemon
+        a: Tauros
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.2625
+               1: Thunderbolt
+               kill_count: 0.15
+               2: Flamethrower
+               kill_count: 0.1375
+               3: Ice Beam
+               kill_count: 0.1875
+               4: Earthquake
+               kill_count: 0.1375
+               5: Surf
+               kill_count: 0.125
+
+Rank: 0.10180817610062892
+
+    Pokemon
+        a: Dragonite
+
+           attacks
+               0: Wing Attack
+               kill_count: 0.13513513513513514
+               1: Flamethrower
+               kill_count: 0.14864864864864866
+               2: Outrage
+               kill_count: 0.20270270270270271
+               3: Surf
+               kill_count: 0.20270270270270271
+               4: Ice Beam
+               kill_count: 0.25675675675675674
+               5: Thunderbolt
+               kill_count: 0.04054054054054054
+               6: Double-Edge
+               kill_count: 0.013513513513513514
+
+Rank: 0.110062893081761
+
+    Pokemon
+        a: Snorlax
+
+           attacks
+               0: Double-Edge
+               kill_count: 0.1375
+               1: Flamethrower
+               kill_count: 0.125
+               2: Earthquake
+               kill_count: 0.275
+               3: Psychic
+               kill_count: 0.0375
+               4: Ice Beam
+               kill_count: 0.2
+               5: Thunderbolt
+               kill_count: 0.175
+               6: Surf
+               kill_count: 0.05
+
+Rank: 0.11910377358490566
+
+    Pokemon
+        a: Ho-Oh
+
+           attacks
+               0: Flamethrower
+               kill_count: 0.49504950495049505
+               1: Thunderbolt
+               kill_count: 0.1485148514851485
+               2: AncientPower
+               kill_count: 0.0297029702970297
+               3: Psychic
+               kill_count: 0.04950495049504951
+               4: Earthquake
+               kill_count: 0.18811881188118812
+               5: Shadow Ball
+               kill_count: 0.0891089108910891
+
+Rank: 0.21383647798742136
+
+    Pokemon
+        a: Mewtwo
+
+           attacks
+               0: Psychic
+               kill_count: 0.38235294117647056
+               1: Thunderbolt
+               kill_count: 0.17647058823529413
+               2: Flamethrower
+               kill_count: 0.07352941176470588
+               3: Ice Beam
+               kill_count: 0.20588235294117646
+               4: Shadow Ball
+               kill_count: 0.051470588235294115
+               5: BubbleBeam
+               kill_count: 0.0661764705882353
+               6: Double-Edge
+               kill_count: 0.03676470588235294
+               7: Seismic Toss
+               kill_count: 0.007352941176470588
+
+Rank: 0.22818396226415089
+
+    Pokemon
+        a: Lugia
+
+           attacks
+               0: Psychic
+               kill_count: 0.3488372093023256
+               1: Earthquake
+               kill_count: 0.10077519379844961
+               2: Thunderbolt
+               kill_count: 0.21705426356589147
+               3: AncientPower
+               kill_count: 0.03875968992248062
+               4: Ice Beam
+               kill_count: 0.13953488372093023
+               5: Gust
+               kill_count: 0.015503875968992248
+               6: Shadow Ball
+               kill_count: 0.03875968992248062
+               7: Surf
+               kill_count: 0.09302325581395349
+               8: Giga Drain
+               kill_count: 0.007751937984496124
+
+Rank: 0.24646226415094344
+
+    Pokemon
+        a: Mew
+
+           attacks
+               0: Psychic
+               kill_count: 0.34210526315789475
+               1: Earthquake
+               kill_count: 0.09649122807017543
+               2: Thunderbolt
+               kill_count: 0.13157894736842105
+               3: Flamethrower
+               kill_count: 0.06140350877192982
+               4: AncientPower
+               kill_count: 0.03508771929824561
+               5: Ice Beam
+               kill_count: 0.13157894736842105
+               6: Shadow Ball
+               kill_count: 0.06140350877192982
+               7: Surf
+               kill_count: 0.09649122807017543
+               8: Double-Edge
+               kill_count: 0.017543859649122806
+               9: Sludge Bomb
+               kill_count: 0.017543859649122806
+               10: Giga Drain
+               kill_count: 0.008771929824561403
+

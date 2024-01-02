@@ -1,0 +1,112 @@
+Earthquake - 5 - 100 power
+    Golem
+	Rhydon
+	Donphan
+	Sandslash
+	Machamp
+	Tauros
+	Aerodactyl
+	Feraligatr *
+	Sudowoodo
+	Heracross
+	Ursaring
+	Piloswine
+	
+Karate Chop - 5 - 50 power
+    Primeape
+	Machamp
+	
+Ancientpower - 4 - 60 power
+    Kabutops
+	Aerodactyl
+	Feraligatr *
+	Piloswine
+	Donphan
+	
+Flamethrower - 4 - 95 power
+    Charizard
+	Magmar
+	Typhlosion
+	Houndoom
+	
+	Arcanine
+	Slowbro
+	Slowking
+	Octillary
+	
+Ice Beam - 4 - 95 power
+	Octillary
+	
+	Slowbro
+	Starmie
+	Jynx
+	Vaporeon
+	Omastar
+	Slowking
+	Porygon-2
+	
+Surf - 3 - 95 power
+    Slowbro
+	Starmie
+	Vaporeon
+	Omastar
+	Slowking
+	Octillery
+	
+Giga Drain - 3 - 60 power
+    Venusaur
+	Vileplume
+	Victreebel
+	Gengar
+	Exeggutor
+	Tangela
+	Sunflora
+
+	
+Drill Peck - 3 - 80 power
+    Dodrio
+	
+Shadow Ball - 2
+    Flareon
+	Granbull
+	
+Thunderbolt - 2
+    Magneton
+	Gengar
+	Starmie
+	Mr. Mime
+	Jolteon
+	Ampharos
+	Porygon-2
+
+Crunch - 2
+    Houndoom
+	Arcanine
+	
+Psychic - 2
+    Alakazam
+	Slowbro
+	Espeon
+	Slowking
+	Gengar
+	Exeggutor
+	Starmie
+	Mr. Mime
+	Jynx
+	Magmar
+	Porygon-2
+	
+Dragonbreath - 1 - 60 power
+    Charizard
+	Arcanine
+	
+Sludge Bomb - 1
+	Muk
+	Victreebel
+	Granbull
+	
+Body Slam - 0
+	Arcanine
+	Piloswine
+	Donphan
+	
