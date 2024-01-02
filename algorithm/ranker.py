@@ -10,7 +10,7 @@ import cattr
 import config
 from algorithm.damage_calculator import get_max_damage_opponent_pokemon_can_do_to_player, \
     get_max_damage_attacker_pokemon_can_do_to_defender
-from parser.PokemonDataSource import get_pokemon
+from data_source.PokemonDataSource import get_pokemon
 
 
 def save_ranks_json(rank_to_pokemon, file_name):

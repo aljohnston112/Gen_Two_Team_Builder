@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 from data_class.PokemonType import PokemonType
-from parser.TypeChartRepository import type_chart_defend
+from data_source.TypeChartRepository import type_chart_defend
 
 
 class DefenseMultipliers:
