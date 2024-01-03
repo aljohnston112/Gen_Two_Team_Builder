@@ -4,44 +4,16 @@ import os.path
 import string
 import typing
 from collections import defaultdict
+from itertools import cycle, combinations
 
 import cattr
 
 import config
 from algorithm.PokemonState import PokemonState
 from algorithm.damage_calculator import get_max_damage_attacker_can_do_to_defender
+from algorithm.rank_saver import save_defeats, save_move_ranks, save_ranks
 from data_class.StatModifiers import StatModifiers
 from data_source.PokemonDataSource import get_pokemon
-
-
-def save_ranks_json(rank_to_pokemon, file_name):
-    file_name = "/".join(file_name.split("/")[:-1]) + "/json/" + file_name.split("/")[-1]
-    with open(file_name + ".json", "w", encoding="utf-8") as fo:
-        fo.write(json.dumps(cattr.unstructure(rank_to_pokemon)))
-
-
-def save_ranks(rank_to_pokemon, file_name):
-    save_ranks_json(rank_to_pokemon, file_name)
-    with open(file_name, "w", encoding="utf-8") as fo:
-        for k, v in sorted(rank_to_pokemon.items()):
-            fo.write(f"Rank: {k}\n")
-            for i, (pokemon, attacks) in zip(string.ascii_lowercase, v):
-                fo.write(f"\n    Pokemon\n        {i}: " + str(pokemon) + "\n")
-                fo.write("\n           attacks\n")
-                for j, (attack, kill_count) in enumerate(attacks.items()):
-                    fo.write(f"               {j}: " + str(attack) + "\n")
-                    fo.write(f"               kill_count: " + str(kill_count) + "\n")
-            fo.write("\n")
-
-
-def save_move_ranks(
-        file_name,
-        best_player_moves: defaultdict
-):
-    save_ranks_json(best_player_moves, file_name)
-    with open(file_name, "w", encoding="utf-8") as fo:
-        for move, rank in sorted(best_player_moves.items(), key=lambda entry: entry[1]):
-            fo.write(f"{str(move)}'s Rank: {rank}\n")
 
 
 def __rank_pokemon__(
@@ -54,8 +26,24 @@ def __rank_pokemon__(
         defender_stat_modifiers,
         level=50,
 ):
-    pokemon = get_pokemon()
+    pokemon = {k: v for k, v in get_pokemon().items()
+               if v.pokemon_information.name not in [
+                   "Articuno",
+                   "Zapdos",
+                   "Moltres",
+                   "Raikou",
+                   "Entei",
+                   "Suicune",
+                   "Mewtwo",
+                   "Lugia",
+                   "Ho-Oh",
+                   "Mew",
+                   "Celebi",
+                   "Dragonite",
+                   "Pupitar"
+               ]}
     pokemon_to_times_defeated = defaultdict(lambda: 0)
+    pokemon_to_pokemon_lost_to = defaultdict(set)
     attacker_to_move_to_pokemon_defeated = defaultdict(lambda: defaultdict(list))
     for attacking_pokemon in pokemon.values():
         attacking_pokemon = PokemonState(
@@ -74,18 +62,27 @@ def __rank_pokemon__(
                 defender_is_min_stat
             )
             defender_speed_stat = defender_pokemon.speed
-            attacker_first = attacker_speed_stat > defender_speed_stat
-
             damage_to_defender, defender_attack = get_max_damage_attacker_can_do_to_defender(
                 attacking_pokemon,
                 defender_pokemon,
+                attacker_buffed,
                 level=level
             )
             damage_to_attacker, attacker_attack = get_max_damage_attacker_can_do_to_defender(
                 defender_pokemon,
                 attacking_pokemon,
+                defender_buffed,
                 level=level
             )
+
+            attacker_first = attacker_speed_stat > defender_speed_stat
+            if attacker_attack is not None and defender_attack is not None:
+                if (attacker_attack.name == "Vital Throw" and
+                        defender_attack.name != "Vital Throw"):
+                    attacker_first = False
+                if (defender_attack.name == "Vital Throw" and
+                        attacker_attack.name != "Vital Throw"):
+                    attacker_first = True
 
             if damage_to_attacker == 0 and damage_to_defender == 0:
                 attacking_pokemon.add_damage(attacking_pokemon.get_max_hp())
@@ -98,12 +95,12 @@ def __rank_pokemon__(
                     if attacker_attack is not None:
                         if (
                                 attacker_attack.name == "Giga Drain" and
-                                (attacker_first and defender_pokemon.current_hp > 0) or
-                                not attacker_first
+                                ((attacker_first and defender_pokemon.current_hp > 0) or
+                                 not attacker_first)
                         ):
                             gained_health = math.ceil(damage_to_defender / 2)
                             if attacking_pokemon.current_hp < 0:
-                                gained_health += damage_to_attacker + attacking_pokemon.current_hp
+                                gained_health = damage_to_attacker + attacking_pokemon.current_hp
                             attacking_pokemon.add_health(gained_health)
 
                         if attacker_attack.name == "Double-Edge":
@@ -112,12 +109,12 @@ def __rank_pokemon__(
                     if defender_attack is not None:
                         if (
                                 defender_attack.name == "Giga Drain" and
-                                ((not attacker_first and attacking_pokemon.current_hp > 0) or
-                                 attacker_first)
+                                (((not attacker_first and attacking_pokemon.current_hp > 0) or
+                                  attacker_first))
                         ):
                             gained_health = math.ceil(damage_to_attacker / 2)
                             if defender_pokemon.current_hp < 0:
-                                gained_health += damage_to_defender + defender_pokemon.current_hp
+                                gained_health = damage_to_defender + defender_pokemon.current_hp
                             defender_pokemon.add_health(gained_health)
 
                             if defender_attack.name == "Double-Edge":
@@ -126,12 +123,14 @@ def __rank_pokemon__(
                     damage_to_defender, defender_attack = get_max_damage_attacker_can_do_to_defender(
                         attacking_pokemon,
                         defender_pokemon,
+                        attacker_buffed,
                         level=level
                     )
 
                     damage_to_attacker, attacker_attack = get_max_damage_attacker_can_do_to_defender(
                         defender_pokemon,
                         attacking_pokemon,
+                        defender_buffed,
                         level=level
                     )
 
@@ -147,95 +146,91 @@ def __rank_pokemon__(
                         defender_attack.name
                     ].append(defender_pokemon.pokemon.pokemon_information.name)
                     pokemon_to_times_defeated[defender_pokemon.pokemon.pokemon_information.name] += 1
+                else:
+                    pokemon_to_pokemon_lost_to[attacking_pokemon.pokemon.pokemon_information.name].add(
+                        defender_pokemon.pokemon.pokemon_information.name
+                    )
 
+            attacking_pokemon.restore()
+
+    save_defeats(
+        {
+            k: list(v) for k, v in (pokemon_to_pokemon_lost_to.items())
+        }
+    )
+
+    # TODO cache above
     # Do the ranking
-    sum_of_pokemon_defeated_by_all = 0
-    for attacker_name, move_to_pokemon_defeated in attacker_to_move_to_pokemon_defeated.items():
-        for move, pokemon_defeated in move_to_pokemon_defeated.items():
-            sum_of_pokemon_defeated_by_all += len(pokemon_defeated)
-
     attacker_rank_to_pokemon = defaultdict(list)
     best_moves = defaultdict(lambda: 0)
+    move_to_number_of_pokemon_that_used_it = defaultdict(lambda: 0)
     for attacker_name, move_to_pokemon_defeated in attacker_to_move_to_pokemon_defeated.items():
         best_attacker_moves = defaultdict(lambda: 0)
 
         number_of_pokemon_defeated_by_attacker = 0
         for move, pokemon_defeated in move_to_pokemon_defeated.items():
             best_attacker_moves[move] += len(pokemon_defeated)
+            move_to_number_of_pokemon_that_used_it[move] += 1
             number_of_pokemon_defeated_by_attacker += len(pokemon_defeated)
+        rank = number_of_pokemon_defeated_by_attacker / len(pokemon_to_pokemon_lost_to.keys())
 
         for move, pokemon_defeated in move_to_pokemon_defeated.items():
             for pokemon in pokemon_defeated:
                 best_moves[move] += 1.0 / pokemon_to_times_defeated[pokemon]
             best_attacker_moves[move] /= number_of_pokemon_defeated_by_attacker
-        rank = number_of_pokemon_defeated_by_attacker / len(get_pokemon())
+
         attacker_rank_to_pokemon[rank].append((attacker_name, best_attacker_moves))
+
+    for move, num in move_to_number_of_pokemon_that_used_it.items():
+        best_moves[move] /= num
     save_move_ranks(config.MOVE_RANKS_FILE_PREFIX + "_" + file_name.split("/")[-1], best_moves)
     save_ranks(attacker_rank_to_pokemon, file_name)
 
 
-def save_average_of_ranks():
-    real_ranks_file = config.REAL_RANKS + ".json"
-    opponent_ranks_file = config.OPPONENT_RANKS + ".json"
-    player_ranks_file = config.PLAYER_RANKS + ".json"
+def analyze_defeats(
+        attacker_stat_modifier: float,
+        attacker_accuracy_modifier: float
+):
+    with open(config.POKEMON_DEFEATED_FILE_JSON, "r") as fo:
+        pokemon_to_pokemon_lost_to = cattr.structure(
+            json.loads(fo.read()),
+            typing.DefaultDict[str, list[str]]
+        )
+    min_overlaps = 999
+    top_threats = set()
+    for pokemon_combo in combinations(pokemon_to_pokemon_lost_to.keys(), 3):
+        seen = set()
+        overlaps = 0
+        j = 0
+        while j < len(pokemon_combo):
+            pokemon = pokemon_combo[j]
+            lost_to = pokemon_to_pokemon_lost_to[pokemon]
+            i = 0
+            while i < len(lost_to):
+                p = lost_to[i]
+                if p not in seen:
+                    seen.add(p)
+                else:
+                    overlaps += 1
+                i += 1
+            j += 1
+        if overlaps < min_overlaps:
+            min_overlaps = overlaps
 
-    with open(real_ranks_file, "r") as fo:
-        real_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
-        )
-    with open(opponent_ranks_file, "r") as fo:
-        opponent_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
-        )
-    with open(player_ranks_file, "r") as fo:
-        player_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[float, list[tuple[str, defaultdict[str, float]]]]
-        )
+            # print(str(list(pokemon_combo)) + "\n")
+            # print("with threats:\n")
+            top_threats.clear()
+            for threat in seen:
+                top_threats.add(threat)
+                print("    " + threat)
 
-    move_to_count = defaultdict(lambda: 0)
-    move_to_rank = defaultdict(lambda: 0)
-    for ranking in [real_ranks, opponent_ranks, player_ranks]:
-        for rank, move_ranks in ranking.items():
-            for (pokemon_name, attack_to_rank) in move_ranks:
-                move_to_count[pokemon_name] += 1
-                move_to_rank[pokemon_name] += rank
-    for move, rank in move_to_rank.items():
-        move_to_rank[move] /= move_to_count[move]
-    save_move_ranks(config.AVERAGE_RANKS_FILE, move_to_rank)
-
-    move_ranks_file_prefix = config.MOVE_RANKS_FILE_PREFIX
-    real_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
-    opponent_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
-    player_move_ranks_file = move_ranks_file_prefix + "_" + real_ranks_file.split("/")[-1]
-
-    with open(real_move_ranks_file, "r") as fo:
-        real_move_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[str, float]
-        )
-    with open(opponent_move_ranks_file, "r") as fo:
-        opponent_move_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[str, float]
-        )
-    with open(player_move_ranks_file, "r") as fo:
-        player_move_ranks = cattr.structure(
-            json.loads(fo.read()),
-            typing.DefaultDict[str, float]
-        )
-
-    move_to_count = defaultdict(lambda: 0)
-    move_to_rank = defaultdict(lambda: 0)
-    for ranking in [real_move_ranks, opponent_move_ranks, player_move_ranks]:
-        for move_name, rank in ranking.items():
-            move_to_count[move_name] += 1
-            move_to_rank[move_name] += rank
-    for move, rank in move_to_rank.items():
-        move_to_rank[move] /= move_to_count[move]
-    save_move_ranks(config.AVERAGE_MOVES_RANKS_FILE, move_to_rank)
+    pokemon_to_threat_count = defaultdict(lambda: 0)
+    for defeated_pokemon, lost_to in pokemon_to_pokemon_lost_to.items():
+        for threat in top_threats:
+            if threat in lost_to:
+                pokemon_to_threat_count[threat] += 1
+    print("Top threat to the threat ranks:")
+    print(sorted(pokemon_to_threat_count.items(), key=lambda e: e[1]))
 
 
 def rank_pokemon():
@@ -243,66 +238,71 @@ def rank_pokemon():
     player_ranks_file = config.PLAYER_RANKS
 
     # Modifiers
-    # Stats: 25, 28, 33, 40, 50, 66, 100, 150, 200, 250, 300, 350, 400
-    # Accuracy and evasion: 33, 36, 43, 50, 66, 75, 100, 133, 166, 200, 233, 266, 300
-
-    min_stat_modifier = 200
-    min_accuracy_modifier = 0.33
-    min_stat_modifiers = StatModifiers(
-        attack_modifier=min_stat_modifier,
-        special_attack_modifier=min_stat_modifier,
-        defense_modifier=min_stat_modifier,
-        special_defense_modifier=min_stat_modifier,
-        speed_modifier=min_stat_modifier,
-        accuracy_modifier=min_accuracy_modifier,
-        evasion_modifier=min_accuracy_modifier
-    )
-
-    max_stat_modifier = 400
-    max_accuracy_modifier = 300
-    max_stat_modifiers = StatModifiers(
-        attack_modifier=max_stat_modifier,
-        special_attack_modifier=max_stat_modifier,
-        defense_modifier=max_stat_modifier,
-        special_defense_modifier=max_stat_modifier,
-        speed_modifier=max_stat_modifier,
-        accuracy_modifier=max_accuracy_modifier,
-        evasion_modifier=max_accuracy_modifier
-    )
-
-    # if not os.path.isfile(player_ranks_file):
-    #     __rank_pokemon__(
-    #         player_ranks_file,
-    #         attacker_is_min_stat=True,
-    #         defender_is_min_stat=False,
-    #         attacker_buffed=False,
-    #         defender_buffed=True,
-    #         attacker_stat_modifiers=min_stat_modifiers,
-    #         defender_stat_modifiers=max_stat_modifiers
-    #     )
-    #
-    # opponent_ranks_file = config.OPPONENT_RANKS
-    # if not os.path.isfile(opponent_ranks_file):
-    #     __rank_pokemon__(
-    #         opponent_ranks_file,
-    #         attacker_is_min_stat=False,
-    #         defender_is_min_stat=False,
-    #         attacker_buffed=True,
-    #         defender_buffed=True,
-    #         attacker_stat_modifiers=max_stat_modifiers,
-    #         defender_stat_modifiers=max_stat_modifiers
-    #     )
-
-    real_ranks_file = config.REAL_RANKS
-    if not os.path.isfile(real_ranks_file):
-        __rank_pokemon__(
-            real_ranks_file,
-            attacker_is_min_stat=False,
-            defender_is_min_stat=False,
-            attacker_buffed=False,
-            defender_buffed=True,
-            attacker_stat_modifiers=min_stat_modifiers,
-            defender_stat_modifiers=max_stat_modifiers
+    # Stats: .25, .28, .33, .40, .50, .66, 1.00, 1.50, 2.00, 2.50, 3.00, 3.50, 4.00
+    # Accuracy and evasion: .33, .36, .43, .50, .66, .75, 1.00, 1.33, 1.66, 2.00, 2.33, 2.66, 3.00
+    for multiplier in [.25, .28, .33, .40, .50, .66, 1.00, 1.50, 2.00, 2.50, 3.00, 3.50, 4.00]:
+        # TODO save the results to a file
+        attacker_stat_modifier = 0.66
+        attacker_accuracy_modifier = 1
+        attacker_stat_modifiers = StatModifiers(
+            attack_modifier=attacker_stat_modifier,
+            special_attack_modifier=attacker_stat_modifier,
+            defense_modifier=attacker_stat_modifier,
+            special_defense_modifier=attacker_stat_modifier,
+            speed_modifier=attacker_stat_modifier,
+            accuracy_modifier=attacker_accuracy_modifier,
+            evasion_modifier=attacker_accuracy_modifier
         )
 
-    # save_average_of_ranks()
+        defender_stat_modifier = 1
+        defender_accuracy_modifier = 1
+        defender_stat_modifiers = StatModifiers(
+            attack_modifier=defender_stat_modifier,
+            special_attack_modifier=defender_stat_modifier,
+            defense_modifier=defender_stat_modifier,
+            special_defense_modifier=defender_stat_modifier,
+            speed_modifier=defender_stat_modifier,
+            accuracy_modifier=defender_accuracy_modifier,
+            evasion_modifier=defender_accuracy_modifier
+        )
+
+        # if not os.path.isfile(player_ranks_file):
+        #     __rank_pokemon__(
+        #         player_ranks_file,
+        #         attacker_is_min_stat=True,
+        #         defender_is_min_stat=False,
+        #         attacker_buffed=False,
+        #         defender_buffed=True,
+        #         attacker_stat_modifiers=min_stat_modifiers,
+        #         defender_stat_modifiers=max_stat_modifiers
+        #     )
+        #
+        # opponent_ranks_file = config.OPPONENT_RANKS
+        # if not os.path.isfile(opponent_ranks_file):
+        #     __rank_pokemon__(
+        #         opponent_ranks_file,
+        #         attacker_is_min_stat=False,
+        #         defender_is_min_stat=False,
+        #         attacker_buffed=True,
+        #         defender_buffed=True,
+        #         attacker_stat_modifiers=max_stat_modifiers,
+        #         defender_stat_modifiers=max_stat_modifiers
+        #     )
+
+        real_ranks_file = config.REAL_RANKS
+        if not os.path.isfile(real_ranks_file):
+            __rank_pokemon__(
+                real_ranks_file,
+                attacker_is_min_stat=False,
+                defender_is_min_stat=False,
+                attacker_buffed=False,
+                defender_buffed=True,
+                attacker_stat_modifiers=attacker_stat_modifiers,
+                defender_stat_modifiers=defender_stat_modifiers
+            )
+
+        # save_average_of_ranks()
+        analyze_defeats(
+            attacker_stat_modifier=0.66,
+            attacker_accuracy_modifier = 1
+        )

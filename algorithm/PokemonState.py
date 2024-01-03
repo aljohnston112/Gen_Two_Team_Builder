@@ -42,4 +42,8 @@ class PokemonState:
 
     def add_health(self, health):
         self.current_hp += health
+        self.current_hp = min(self.current_hp, self.max_hp)
+
+    def restore(self):
+        self.current_hp = self.max_hp
 

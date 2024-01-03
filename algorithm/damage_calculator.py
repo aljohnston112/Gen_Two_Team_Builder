@@ -19,7 +19,8 @@ def get_attack_power(attack, attacker_state: PokemonState, defender):
         else:
             move_power = 0
     elif attack.name == "Reversal":
-        move_power = get_reversal_power(attacker_state.current_hp, attacker_state.get_max_hp())
+        # move_power = get_reversal_power(attacker_state.current_hp, attacker_state.get_max_hp())
+        move_power = 0
     elif attack.name == "Magnitude":
         if buff:
             move_power = 150
@@ -38,12 +39,22 @@ def get_attack_power(attack, attacker_state: PokemonState, defender):
         move_power = 70
     elif attack.name == "Hyper Beam":
         move_power = 75
+    elif attack.name == "Solarbeam":
+        if buff:
+            move_power = 120
+        else:
+            move_power = 60
+    elif attack.name in ["Double-Edge", "Thrash", "Vital Throw"] and not buff:
+        move_power = 0
+    elif attack.name == "Skull Bash":
+        move_power = 65
     return move_power
 
 
 def get_max_damage_attacker_can_do_to_defender(
         attacker_state: PokemonState,
         defender_state: PokemonState,
+        attacker_buffed,
         level: int = 50,
 ) -> (float, Attack):
     attacker = attacker_state.get_pokemon()
@@ -56,47 +67,48 @@ def get_max_damage_attacker_can_do_to_defender(
     best_pokemon_move = None
 
     for attack in all_attacks:
-        is_special = attack.category is Category.SPECIAL
-        if not is_special:
-            attack_stat = attacker_state.attack_stat * attacker_state.stat_modifiers.attack_modifier
-            defense_stat = defender_state.defense_stat * defender_state.stat_modifiers.defense_modifier
-        else:
-            attack_stat = attacker_state.special_attack * attacker_state.stat_modifiers.special_attack_modifier
-            defense_stat = defender_state.special_defense * defender_state.stat_modifiers.special_defense_modifier
+        if attacker_buffed or attack.accuracy == 100:
+            is_special = attack.category is Category.SPECIAL
+            if not is_special:
+                attack_stat = attacker_state.attack_stat * attacker_state.stat_modifiers.attack_modifier
+                defense_stat = defender_state.defense_stat * defender_state.stat_modifiers.defense_modifier
+            else:
+                attack_stat = attacker_state.special_attack * attacker_state.stat_modifiers.special_attack_modifier
+                defense_stat = defender_state.special_defense * defender_state.stat_modifiers.special_defense_modifier
 
-        attack_power = get_attack_power(attack, attacker_state, defender)
-        damage = (
-                     (
-                             (
-                                     (
-                                             (((2.0 * level) / 5.0) + 2.0) *
-                                             attack_power *
-                                             (attack_stat / defense_stat)
-                                     ) / 50.0
-                             ) * 2 + 2
-                     )
-                 ) * defender_defense_multipliers[attack.pokemon_type]
+            attack_power = get_attack_power(attack, attacker_state, defender)
+            damage = (
+                         (
+                                 (
+                                         (
+                                                 (((2.0 * level) / 5.0) + 2.0) *
+                                                 attack_power *
+                                                 (attack_stat / defense_stat)
+                                         ) / 50.0
+                                 ) * 2 + 2
+                         )
+                     ) * defender_defense_multipliers[attack.pokemon_type]
 
-        zero = True
-        if attack.name in ["Night Shade", "Seismic Toss"]:
-            damage = level
-            zero = False
+            zero = True
+            if attack.name in ["Night Shade", "Seismic Toss"]:
+                damage = level
+                zero = False
 
-        if (attack.pokemon_type in attacker.pokemon_information.pokemon_types or
-                (attack.name == "Hidden Power") and attacker_state.buffed):
-            damage = damage * 1.5
+            if (attack.pokemon_type in attacker.pokemon_information.pokemon_types or
+                    (attack.name == "Hidden Power") and attacker_state.buffed):
+                damage = damage * 1.5
 
-        if attack.name == "Hidden Power" and not attacker_state.buffed:
-            damage = damage * min(defender_defense_multipliers.values())
+            if attack.name == "Hidden Power" and not attacker_state.buffed:
+                damage = damage * min(defender_defense_multipliers.values())
 
-        if attack.name == "Present" and not attacker_state.buffed:
-            damage = - (defender_state.get_max_hp() / 4)
+            if attack.name == "Present" and not attacker_state.buffed:
+                damage = - (defender_state.get_max_hp() / 4)
 
-        if zero and attack_power == 0:
-            damage = 0
+            if zero and attack_power == 0:
+                damage = 0
 
-        if damage > max_damage:
-            best_pokemon_move = attack
-        max_damage = max(damage, max_damage)
+            if damage > max_damage:
+                best_pokemon_move = attack
+            max_damage = max(damage, max_damage)
 
     return max_damage, best_pokemon_move
